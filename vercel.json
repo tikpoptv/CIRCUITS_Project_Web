@@ -1,8 +1,7 @@
 {
     "version": 2,
-    "routes": [{
-        "src": "/(.*)",
-        "dest": "index.php"
-    }],
-    "env": {}
-}
+    "builds": [
+      { "src": "index.php", "use": "vercel-php@0.6.0" },
+      { "src": "user.php", "use": "vercel-php@0.6.0" }
+    ]
+  }
